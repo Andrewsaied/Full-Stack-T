@@ -1,0 +1,16 @@
+<html lang="en">
+<%- include("./partials/head.ejs") %>
+
+<body>
+  <%- include("./partials/nav.ejs") %>
+<table>
+  <% list.forEach(function(genre){ %>
+    <tr>
+      <p>genre: <%= genre.genre%></p>
+    </tr>
+  <% }) %>
+</table>
+
+  <%- include("./partials/footer.ejs") %>
+</body>
+</html>
